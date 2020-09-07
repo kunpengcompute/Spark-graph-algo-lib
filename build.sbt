@@ -14,7 +14,7 @@ lazy val commonSettings = Seq(
 lazy val graphx_source = (project in file("Spark-graph-algo-lib"))
   .settings(commonSettings: _*)
   .settings(
-    name := "sophon-graph-acc",
+    name := "sophon-graph-kernel-client",
     version := s"1.0.0",
     parallelExecution in Test:= false
   )

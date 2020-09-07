@@ -1,7 +1,7 @@
 package org.apache.spark.graphx.lib
 
 
-import scala.reflect.{ClassTag, classTag}
+import scala.reflect.ClassTag
 import org.apache.spark.graphx.Graph
 
 object TriangleCount {
