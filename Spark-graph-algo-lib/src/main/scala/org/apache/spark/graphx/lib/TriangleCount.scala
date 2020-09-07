@@ -2,6 +2,7 @@ package org.apache.spark.graphx.lib
 
 
 import scala.reflect.ClassTag
+
 import org.apache.spark.graphx.Graph
 
 object TriangleCount {
@@ -10,8 +11,8 @@ object TriangleCount {
     null
   }
 
-  def runPreCanonicalized[VD: ClassTag, ED: ClassTag](canonicalGraph: Graph[VD, ED]): Graph[Int, ED] = {
+  def runPreCanonicalized[VD: ClassTag, ED: ClassTag](
+    canonicalGraph: Graph[VD, ED]): Graph[Int, ED] = {
     null
   }
-
 }
