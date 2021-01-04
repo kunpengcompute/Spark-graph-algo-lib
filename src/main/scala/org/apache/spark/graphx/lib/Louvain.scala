@@ -8,16 +8,16 @@
 
 package org.apache.spark.graphx.lib
 
-import scala.reflect.ClassTag
-
 import org.apache.spark.rdd.RDD
 
-object WeakCliqueEnumeration {
+object Louvain {
 
-  def run[T: ClassTag](
-    graph: RDD[(T, T)],
-    maxIterations: Int,
-    maxDegree: Int): (RDD[(Int, T)], RDD[(Int, Int)]) = {
+  def run(
+    edges: RDD[(Long, Long, Double)],
+    iterNum: Int,
+    isDirected: Boolean,
+    partitionNum: Int): (Double, RDD[(Long, Long)]) = {
     null
   }
+
 }

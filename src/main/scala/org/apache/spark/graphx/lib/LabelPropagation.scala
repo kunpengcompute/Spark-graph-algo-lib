@@ -20,15 +20,11 @@ package org.apache.spark.graphx.lib
 import scala.reflect.ClassTag
 
 import org.apache.spark.graphx.Graph
+import org.apache.spark.graphx.VertexId
 
-object TriangleCount {
+object LabelPropagation {
 
-  def run[VD: ClassTag, ED: ClassTag](graph: Graph[VD, ED]): Graph[Int, ED] = {
-    null
-  }
-
-  def runPreCanonicalized[VD: ClassTag, ED: ClassTag](
-    canonicalGraph: Graph[VD, ED]): Graph[Int, ED] = {
+  def run[VD, ED: ClassTag](graph: Graph[VD, ED], maxSteps: Int): Graph[VertexId, ED] = {
     null
   }
 }

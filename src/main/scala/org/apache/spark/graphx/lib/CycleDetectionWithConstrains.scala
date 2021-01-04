@@ -8,16 +8,17 @@
 
 package org.apache.spark.graphx.lib
 
-import scala.reflect.ClassTag
-
 import org.apache.spark.rdd.RDD
 
-object WeakCliqueEnumeration {
+object CycleDetectionWithConstrains {
 
-  def run[T: ClassTag](
-    graph: RDD[(T, T)],
-    maxIterations: Int,
-    maxDegree: Int): (RDD[(Int, T)], RDD[(Int, Int)]) = {
+  def run(
+      edgeInfo: RDD[(Long, Long, Double)],
+      part: Int,
+      minLoopLen: Int,
+      maxLoopLen: Int,
+      minRate: Double,
+      maxRate: Double): RDD[Array[Long]] = {
     null
   }
 }

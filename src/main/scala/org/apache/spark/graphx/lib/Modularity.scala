@@ -8,16 +8,15 @@
 
 package org.apache.spark.graphx.lib
 
-import scala.reflect.ClassTag
-
 import org.apache.spark.rdd.RDD
 
-object WeakCliqueEnumeration {
+object Modularity {
 
-  def run[T: ClassTag](
-    graph: RDD[(T, T)],
-    maxIterations: Int,
-    maxDegree: Int): (RDD[(Int, T)], RDD[(Int, Int)]) = {
-    null
+  def run(
+    nodes: RDD[(Long, Long)],
+    edges: RDD[(Long, Long, Double)],
+    isDirected: Boolean,
+    partitionNum: Int = 1): Double = {
+    0.0
   }
 }

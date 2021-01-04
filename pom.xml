@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.spark.graphx.lib</groupId>
   <artifactId>sophon-graph-kernel-client_2.11</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <name>${project.artifactId}</name>
   <description>Spark graph algo client</description>
   <inceptionYear>2020</inceptionYear>
