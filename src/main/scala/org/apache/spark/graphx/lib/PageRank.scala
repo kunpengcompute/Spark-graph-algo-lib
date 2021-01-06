@@ -21,14 +21,15 @@ import scala.reflect.ClassTag
 
 import org.apache.spark.graphx.Graph
 
-object TriangleCount {
+object PageRank {
 
-  def run[VD: ClassTag, ED: ClassTag](graph: Graph[VD, ED]): Graph[Int, ED] = {
+  def run[VD: ClassTag, ED: ClassTag](graph: Graph[VD, ED], numIter: Int,
+      resetProb: Double = 0.15): Graph[Double, Double] = {
     null
   }
 
-  def runPreCanonicalized[VD: ClassTag, ED: ClassTag](
-    canonicalGraph: Graph[VD, ED]): Graph[Int, ED] = {
+  def runUntilConvergence[VD: ClassTag, ED: ClassTag](
+      graph: Graph[VD, ED], tol: Double, resetProb: Double = 0.15): Graph[Double, Double] = {
     null
   }
 }

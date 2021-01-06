@@ -8,16 +8,15 @@
 
 package org.apache.spark.graphx.lib
 
-import scala.reflect.ClassTag
-
+import org.apache.spark.graphx.VertexId
 import org.apache.spark.rdd.RDD
 
-object WeakCliqueEnumeration {
-
-  def run[T: ClassTag](
-    graph: RDD[(T, T)],
-    maxIterations: Int,
-    maxDegree: Int): (RDD[(Int, T)], RDD[(Int, Int)]) = {
+object Closeness {
+  def run(
+      edgeRDD: RDD[(VertexId, VertexId, Double)],
+      weighted: Boolean,
+      k: Int,
+      p: Double): RDD[(Long, Double)] = {
     null
   }
 }
