@@ -14,17 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.spark.graphx.lib
-
-import scala.reflect.ClassTag
-
-import org.apache.spark.graphx.Graph
-import org.apache.spark.graphx.VertexId
-
-object LabelPropagation {
-
-  def run[VD, ED: ClassTag](graph: Graph[VD, ED], maxSteps: Int): Graph[VertexId, ED] = {
-    null
-  }
-}
+ 
+Copyright (C) 2021. Huawei Technologies Co., Ltd.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

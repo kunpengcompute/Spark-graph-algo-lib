@@ -1,46 +1,49 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.apache.spark.graphx.lib</groupId>
-  <artifactId>sophon-graph-kernel-client_2.11</artifactId>
-  <version>1.1.0</version>
+  <groupId>org.apache.spark</groupId>
+  <artifactId>sophon-graph</artifactId>
+  <version>1.2.0</version>
   <name>${project.artifactId}</name>
-  <description>Spark graph algo client</description>
+  <description>Spark graph algo</description>
   <inceptionYear>2020</inceptionYear>
+  <packaging>pom</packaging>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.spark</groupId>
-      <artifactId>spark-graphx_2.11</artifactId>
-      <version>2.3.2</version>
-    </dependency>
-  </dependencies>
+  <modules>
+	<module>graph-kernel</module>
+    <module>graph-accelerator</module>
+  </modules>
   <build>
-    <sourceDirectory>src/main/scala</sourceDirectory>
-    <plugins>
-      <plugin>
-        <!-- see http://davidb.github.com/scala-maven-plugin -->
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-        <version>3.2.0</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-            <configuration>
-              <args>
-                <arg>-dependencyfile</arg>
-                <arg>${project.build.directory}/.scala_dependencies</arg>
-              </args>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.scalastyle</groupId>
+          <artifactId>scalastyle-maven-plugin</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+            <verbose>false</verbose>
+            <failOnViolation>true</failOnViolation>
+            <includeTestSourceDirectory>false</includeTestSourceDirectory>
+            <failOnWarning>false</failOnWarning>
+            <sourceDirectory>${basedir}/src/main/scala</sourceDirectory>
+            <configLocation>scalastyle-config.xml</configLocation>
+            <outputFile>${basedir}/target/scalastyle-output.xml</outputFile>
+            <inputEncoding>UTF-8</inputEncoding>
+            <outputEncoding>UTF-8</outputEncoding>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 </project>
