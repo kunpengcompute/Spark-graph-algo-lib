@@ -5,8 +5,6 @@
 Introduction
 ============
 
-Graph Algorithm library, running on KUNPENG chipset, is an accelerated library that provides a rich set of higher-level tools for graph algorithms. It is based on the original APIs from Apache  [Spark 2.3.2](https://github.com/apache/spark/tree/v2.3.2). The accelerated library greatly improves the computational performance in big data scenarios. Additionally, it provides several original created APIs which are not included in Apache Spark graphx library.
-
 The graph algorithm library running on Kunpeng processors is an acceleration library that provides a rich set of high-level tools for graph algorithms. It is developed based on original APIs of Apache [Spark 2.3.2](https://github.com/apache/spark/tree/v2.3.2). The acceleration library greatly improves the computing power in big data scenarios. Additionally, it provides multiple APIs in addition to the original APIs if the Apache Spark graph library.
 
 The library provides 15 graph algorithms: triangle count (TC), weak clique enumeration (WCE), maximal clique enumeration (MCE), modualrity, closeness, cycle detection (CD), label propagation algorithm (LPA), Louvain, PageRank, shortest-paths, strongly connected components (SCC), connected components (CC), K-core decomposition (KCore), degree centrality (Degree) and breadth-first-search (BFS). You can find the latest documentation on the project web page. This README file contains only basic setup instructions.
