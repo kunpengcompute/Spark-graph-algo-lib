@@ -7,7 +7,9 @@ Introduction
 
 Graph Algorithm library, running on KUNPENG chipset, is an accelerated library that provides a rich set of higher-level tools for graph algorithms. It is based on the original APIs from Apache  [Spark 2.3.2](https://github.com/apache/spark/tree/v2.3.2). The accelerated library greatly improves the computational performance in big data scenarios. Additionally, it provides several original created APIs which are not included in Apache Spark graphx library.
 
-The current version provides 15 graph algorithms, TC (Triangle Count), WCE (Weak Clique Enumeration), MCE (MaximalClique Enumeration), Modualrity, Closeness, CD(Cycle Detection), LPA(Label Propagation Algorithm), Louvain, PageRank, ShortestPaths, SCC(Strongly Connected Components), CC(Connected Components), KCore(K-Core Decomposition), Degree(Degree Centrality), BFS(Breadth-First-Search). You can find the latest documentation, including a programming guide, on the project web page. This README file only contains basic setup instructions.
+The graph algorithm library running on Kunpeng processors is an acceleration library that provides a rich set of high-level tools for graph algorithms. It is developed based on original APIs of Apache [Spark 2.3.2](https://github.com/apache/spark/tree/v2.3.2). The acceleration library greatly improves the computing power in big data scenarios. Additionally, it provides multiple APIs in addition to the original APIs if the Apache Spark graph library.
+
+The library provides 15 graph algorithms: triangle count (TC), weak clique enumeration (WCE), maximal clique enumeration (MCE), modualrity, closeness, cycle detection (CD), label propagation algorithm (LPA), Louvain, PageRank, shortest-paths, strongly connected components (SCC), connected components (CC), K-core decomposition (KCore), degree centrality (Degree) and breadth-first-search (BFS). You can find the latest documentation on the project web page. This README file contains only basic setup instructions.
 
 
 
@@ -20,18 +22,18 @@ Building
  
     mvn package
 
- Get sophon-graph-acc_2.11-1.2.0.jar under "Spark-graph-algo-lib/graph-accelerator/target/"
+ Obtain "sophon-graph-acc_2.11-1.2.0.jar" from the "Spark-graph-algo-lib/graph-accelerator/target/" directory
  
- Get sophon-graph-kernel-clinet_2.11-1.2.0.jar under "Spark-graph-algo-lib/graph-kernel/target/"
+ Obtain "sophon-graph-kernel-clinet_2.11-1.2.0.jar" from the "Spark-graph-algo-lib/graph-kernel/target/" directory
  
 
 
-Contribution guidelines
+Contribution Guidelines
 ========
 
-Please use GitHub [issues](https://github.com/kunpengcompute/Spark-graph-algo-lib/issues) for tracking requests and bugs.
+Track the bugs and feature requests via [GitHub issues](https://github.com/kunpengcompute/Spark-graph-algo-lib/issues).
 
 More Information
 ========
 
-For further assistance, you can send email to kunpengcompute@huawei.com.
+For further assistance, send an email to kunpengcompute@huawei.com.
