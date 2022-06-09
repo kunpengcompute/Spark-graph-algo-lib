@@ -7,7 +7,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 <!--    <groupId>org.apache.spark.graphx.lib</groupId>-->
-    <artifactId>boostkit-graph-core_2.11</artifactId>
+    <artifactId>boostkit-graph-core_2.12</artifactId>
     <version>2.1.0</version>
     <name>${project.artifactId}</name>
     <description>Spark graph core</description>
@@ -15,12 +15,12 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-graphx_2.11</artifactId>
-            <version>2.3.2</version>
+            <artifactId>spark-graphx_2.12</artifactId>
+            <version>3.1.1</version>
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.11</artifactId>
+            <artifactId>scalatest_2.12</artifactId>
             <version>3.0.5</version>
             <scope>test</scope>
         </dependency>
@@ -31,8 +31,8 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-mllib_2.11</artifactId>
-            <version>2.3.2</version>
+            <artifactId>spark-mllib_2.12</artifactId>
+            <version>3.1.1</version>
         </dependency>
     </dependencies>
 
