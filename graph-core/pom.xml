@@ -2,13 +2,13 @@
     <parent>
         <groupId>org.apache.spark</groupId>
         <artifactId>boostkit-graph</artifactId>
-        <version>2.1.0</version>
+        <version>2.2.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 <!--    <groupId>org.apache.spark.graphx.lib</groupId>-->
     <artifactId>boostkit-graph-core_2.12</artifactId>
-    <version>2.1.0</version>
+    <version>2.2.0</version>
     <name>${project.artifactId}</name>
     <description>Spark graph core</description>
 
