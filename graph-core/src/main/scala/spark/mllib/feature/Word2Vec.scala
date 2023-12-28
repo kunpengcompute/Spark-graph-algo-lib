@@ -705,7 +705,7 @@ class Word2VecModel private[spark](
 }
 
 @Since("1.4.0")
-object Word2VecModel extends Loader[Word2VecModel] {
+object Word2VecModel extends Loader[Word2VecModel]{
 
   private def buildWordIndex(model: Map[String, Array[Float]]): Map[String, Int] = {
     model.keys.zipWithIndex.toMap
@@ -746,7 +746,7 @@ object Word2VecModel extends Loader[Word2VecModel] {
     def save(sc: SparkContext, path: String, model: Map[String, Array[Float]]): Unit = {
       val spark = SparkSession.builder().sparkContext(sc).getOrCreate()
 
-      val vectorSize = model.values.head.length
+      val vectorSize = model.values.toArray.head.length
       val numWords = model.size
       val metadata = compact(render(
         ("class" -> classNameV1_0) ~ ("version" -> formatVersionV1_0) ~

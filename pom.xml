@@ -3,16 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.spark</groupId>
     <artifactId>boostkit-graph</artifactId>
-    <version>2.2.0</version>
+    <version>3.0.0</version>
     <name>${project.artifactId}</name>
     <description>Spark graph algo</description>
-    <inceptionYear>2020</inceptionYear>
+    <inceptionYear>2022</inceptionYear>
     <packaging>pom</packaging>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
-	<spark.version>spark3.1.1</spark.version>
+	<spark.version>spark3.3.1</spark.version>
     </properties>
 
     <modules>
