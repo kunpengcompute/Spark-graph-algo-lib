@@ -1,39 +1,20 @@
-# Spark-graph-algo-lib
+# 图分析算法加速库
 
+#### 介绍
+鲲鹏BoostKit图分析算法加速库  （以下均简称为图分析算法加速库/图算法加速库）是经过优化的算法库，兼容Spark原生API（MCE算法属于自研算法，没有Spark原生API），对图分析算法进行了性能优化，大幅提升了大数据算法场景的计算性能，该库支持鲲鹏处理器的体系架构，目前提供的图分析算法如下。
 
+- MCE（Maximal Clique Enumeration，极大团）
+- MSSP（Multiple Sources Shortest Path，多源最短路径）
+- PageRank（网页排名）
+- Betweenness（介数中心性）
 
-Introduction
-============
+#### 操作系统
+openEuler 22.03 LTS SP1
 
-The graph algorithm library running on Kunpeng processors is an acceleration library that provides a rich set of high-level tools for graph algorithms. It is developed based on original APIs of Apache [Spark 2.3.2](https://github.com/apache/spark/tree/v2.3.2). The acceleration library greatly improves the computing power in big data scenarios. Additionally, it provides multiple APIs in addition to the original APIs if the Apache Spark graph library.
+#### 使用说明
+用户指南链接：
+https://www.hikunpeng.com/document/detail/zh/kunpengbds/appAccelFeatures/algorithmaccelf_ga/kunpengbdssparkgraph_20_0002.html
 
-The library provides 24 graph algorithms: triangle count (TC), weak clique enumeration (WCE), maximal clique enumeration (MCE), modualrity, closeness, cycle detection (CD), label propagation algorithm (LPA), Louvain, PageRank, IncPageRank, Weighted PageRank, shortest-paths, strongly connected components (SCC), connected components (CC), K-core decomposition (KCore), degree centrality (Degree), breadth-first-search (BFS), ClusteringCoefficient, TrustRank, PersonalizedPageRank, Betweenness, Node2Vec, SubgraphMatching and TrillionPageRank. You can find the latest documentation on the project web page. This README file contains only basic setup instructions.
-
-
-
-
-
-Building
-========
-
-    cd Spark-graph-algo-lib/
- 
-    mvn package
-
- Obtain "boostkit-graph-acc_2.11-2.2.0-Spark2.3.2.jar" from the "Spark-graph-algo-lib/graph-accelerator/target/" directory
-
- Obtain "boostkit-graph-core_2.11-2.2.0-Spark2.3.2.jar" from the "Spark-graph-algo-lib/graph-core/target/" directory
- 
- Obtain "boostkit-graph-kernel-clinet_2.11-2.2.0-Spark2.3.2.jar" from the "Spark-graph-algo-lib/graph-kernel/target/" directory
- 
-
-
-Contribution Guidelines
-========
-
-Track the bugs and feature requests via [GitHub issues](https://github.com/kunpengcompute/Spark-graph-algo-lib/issues).
-
-More Information
-========
-
-For further assistance, send an email to kunpengcompute@huawei.com.
+#### 参与贡献
+    如果您想为本仓库贡献代码，请向本仓库任意maintainer发送邮件
+    如果您找到产品中的任何Bug，欢迎您提出ISSUE
